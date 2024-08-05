@@ -6,11 +6,10 @@ endif()
 
 if (${BUILD_CODE})
     list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/code")
-    find_package(MPI REQUIRED)
 
     find_package(MPI REQUIRED)
     find_package(CUDAToolkit REQUIRED)
-    find_package(NCCL REQUIRED)
+    find_package(nccl REQUIRED)
 
     add_executable(nccl_test code/nccl_test.cpp)
 
@@ -22,6 +21,6 @@ if (${BUILD_CODE})
     target_link_libraries(nccl_test PRIVATE
         MPI::MPI_CXX
         CUDA::cudart
-        nccl:nccl
+        nccl::nccl
     )
 endif()
