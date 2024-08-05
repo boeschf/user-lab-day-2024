@@ -13,8 +13,6 @@ test_mpi-env:
   - nccl@2.21.5-1
   - aws-ofi-nccl@master
   - cmake
-  - ninja
-  - osu-micro-benchmarks
   variants:
   - +mpi
   - +cuda
