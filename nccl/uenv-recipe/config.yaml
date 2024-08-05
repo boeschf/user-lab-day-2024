@@ -1,0 +1,8 @@
+name: nccl-tests
+spack:
+  commit: 5262412c13f49266e4a45a3ef450934531b47592
+  repo: https://github.com/spack/spack.git
+modules: false
+store: /user-environment
+description: NCCL tests
+
