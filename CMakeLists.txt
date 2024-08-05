@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.24)
 
+set(CMAKE_CUDA_ARCHITECTURES "90" CACHE STRING "CUDA architectures")
+
 project(user_lab_day_2024 CXX)
 
 #------------------------------------------------------------------------------
@@ -17,6 +19,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY
 
 option(BUILD_SLIDES "Wether to build slides." ON)
 option(BUILD_SLIDES_PDF "Wether to build slides." ON)
+option(BUILD_CODE "Wether to build code." OFF)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
