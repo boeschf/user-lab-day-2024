@@ -43,3 +43,21 @@ size: 16:9
 
 
 ---
+
+# Uenv and Containers: aws-ofi-plugin
+
+---
+
+# NCCL and Cray Slingshot
+
+
+---
+
+# Performance: NCCL vs MPI
+
+
+---
+
+# References
+
+- https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage.html
