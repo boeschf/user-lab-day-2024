@@ -4,19 +4,32 @@ theme: cscs
 # class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url('../slides-support/common/4k-slide-bg-white.png')
+backgroundImage: url('slides-support/common/4k-slide-bg-white.png')
 size: 16:9
 ---
 
-# **Userlab Day 2024**
-![bg cover](../slides-support/common/title-bg3.png)
+![bg cover](slides-support/common/title-bg3.png)
 <!-- _paginate: skip  -->
 <!-- _class: titlecover -->
 <!-- _footer: "" -->
 
+<div class="twocolumns">
+<div>
+
+# **Userlab Day 2024**
+
 ### NCCL
 
 #### CSCS
+
+
+</div>
+<div>
+
+![height:900px ](qr_rb.png)
+
+</div>
+</div>
 
 ---
 
@@ -59,6 +72,15 @@ size: 16:9
 
 ---
 
-# References
+# Links
 
-- https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage.html
+- reference: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage.html
+- nccl-tests: https://github.com/NVIDIA/nccl-tests
+- pytorch-nccl-tests: https://github.com/stas00/ml-engineering/tree/master/network/benchmarks
+
+## Github Repo with slides and code
+
+- https://github.com/boeschf/user-lab-day-2024
+
+![width:400px](qr.png)
+
