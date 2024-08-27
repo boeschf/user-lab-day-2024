@@ -30,9 +30,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 if (${BUILD_SLIDES})
     include(cmake/Marp.cmake)
+    add_marp_slides(nccl nccl.md)
 endif()
 
-add_subdirectory(nccl)
+if (${BUILD_CODE})
+    add_subdirectory(src)
+endif()
 
 if (${BUILD_JOBREPORT})
     add_subdirectory(ext/alps-jobreport)

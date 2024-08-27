@@ -6,7 +6,7 @@
  * @theme cscs
  * @author Prashanth
  *
- * @auto-scaling true
+ * @auto-scaling fittingHeader,math
  * @size 16:9 1920px 1080px
  * @size 4:3 1440px 1080px
  * @size 4K 3840px 2160px
@@ -43,6 +43,7 @@ section::after {
 pre, code {
   color: black;
   background-color: #EEEEEE;
+  font-size: 32px;
 }
 
 pre {
