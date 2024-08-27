@@ -31,6 +31,11 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 if (${BUILD_SLIDES})
     include(cmake/Marp.cmake)
     add_marp_slides(nccl nccl.md)
+    add_custom_command(
+        TARGET nccl_html POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_BINARY_DIR}/nccl.html" "${CMAKE_CURRENT_SOURCE_DIR}/nccl.html"
+        COMMENT "Copying html to top-level directory"
+    )
 endif()
 
 if (${BUILD_CODE})
