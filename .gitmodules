@@ -1,0 +1,3 @@
+[submodule "ext/alps-jobreport"]
+	path = ext/alps-jobreport
+	url = https://github.com/eth-cscs/alps-jobreport.git
