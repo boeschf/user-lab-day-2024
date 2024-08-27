@@ -17,6 +17,8 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY
     ${PROJECT_BINARY_DIR}/lib CACHE PATH "Single Directory for all static libraries."
 )
 
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+
 option(BUILD_SLIDES "Wether to build slides." ON)
 option(BUILD_SLIDES_PDF "Wether to build slides." ON)
 option(BUILD_CODE "Wether to build code." OFF)
@@ -29,8 +31,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 if (${BUILD_SLIDES})
     include(cmake/Marp.cmake)
 endif()
-
-include(CTest)
 
 add_subdirectory(nccl)
 

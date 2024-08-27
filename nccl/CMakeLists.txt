@@ -3,7 +3,6 @@ if (${BUILD_SLIDES})
 endif()
 
 if (${BUILD_CODE})
-    list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
 
     find_package(MPI REQUIRED)
     find_package(CUDAToolkit REQUIRED)
